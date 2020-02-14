@@ -34,7 +34,6 @@ Partial Class Fr_Facturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fr_Facturas))
         Me.Tab_Opciones = New System.Windows.Forms.TabControl()
         Me.TabP_Facturas_Cerradas = New System.Windows.Forms.TabPage()
-        Me.lb_tiempo = New System.Windows.Forms.Label()
         Me.btn_revisar = New System.Windows.Forms.Button()
         Me.Dgv_facturas_cerradas = New Facturacion_Esteban.MEPDataGridView()
         Me.c_nro_factura_c = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -148,7 +147,6 @@ Partial Class Fr_Facturas
         'TabP_Facturas_Cerradas
         '
         Me.TabP_Facturas_Cerradas.BackColor = System.Drawing.Color.Gainsboro
-        Me.TabP_Facturas_Cerradas.Controls.Add(Me.lb_tiempo)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.btn_revisar)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.Dgv_facturas_cerradas)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.Btn_Modificar_1)
@@ -162,16 +160,6 @@ Partial Class Fr_Facturas
         Me.TabP_Facturas_Cerradas.Size = New System.Drawing.Size(830, 343)
         Me.TabP_Facturas_Cerradas.TabIndex = 0
         Me.TabP_Facturas_Cerradas.Text = "Facturas"
-        '
-        'lb_tiempo
-        '
-        Me.lb_tiempo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lb_tiempo.Location = New System.Drawing.Point(6, 313)
-        Me.lb_tiempo.Name = "lb_tiempo"
-        Me.lb_tiempo.Size = New System.Drawing.Size(75, 16)
-        Me.lb_tiempo.TabIndex = 35
-        Me.lb_tiempo.Text = "0"
-        Me.lb_tiempo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btn_revisar
         '
@@ -1132,7 +1120,6 @@ Partial Class Fr_Facturas
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btn_revisar As Button
-    Friend WithEvents lb_tiempo As Label
     Friend WithEvents dgvFacturasCobrar As MEPDataGridView
     Friend WithEvents cNroFactura As DataGridViewTextBoxColumn
     Friend WithEvents cVendidoA As DataGridViewTextBoxColumn

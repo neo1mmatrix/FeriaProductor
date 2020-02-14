@@ -13,16 +13,11 @@ Module MysqlCon
     Dim fdet_resultado As Double = False
 
     Public Sub conectarse()
-
-        'CONNECCION DE LA VERSION DE PRUEBAS
-        'MysqlCon = New MySqlConnection
-        'MysqlCon.ConnectionString = "server=localhost;userid=root;password=BDFERIA;database=FERIA_TEST;Allow Zero Datetime=True;Convert Zero Datetime=True;"
-
         'CONECCION DE LA VERSION FINAL
 
         MysqlCon = New MySqlConnection
         MysqlCon.ConnectionString = "server=186.159.230.229;userid=root;password=BDFERIA;database=bdferia;Allow Zero Datetime=True;Convert Zero Datetime=True;"
-
+        'MysqlCon.ConnectionString = "server=localhost;userid=root;password=BDFERIA;database=FERIA_TEST;Allow Zero Datetime=True;Convert Zero Datetime=True;"
 
 
     End Sub

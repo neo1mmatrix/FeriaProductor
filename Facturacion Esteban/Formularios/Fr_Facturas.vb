@@ -1295,41 +1295,6 @@ Public Class Fr_Facturas
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        tiempo -= 1
-        Dim minutos As Integer = 0
-        Dim segundos As Integer = tiempo
-        If tiempo > 60 Then
-            While segundos > 59
-                segundos -= 60
-                minutos += 1
-            End While
-        End If
-        Dim _PedidoCantidadDetalles As Integer = 0
-        If segundos < 10 Then
-            lb_tiempo.Text = "0" & minutos.ToString & ":0" & segundos
-        Else
-            lb_tiempo.Text = "0" & minutos.ToString & ":" & segundos
-        End If
-        If tiempo = 0 Then
-            tiempo = 301
-            Dim pedidos_pendientes As Integer = 0
-            SEL_CUENTA_PEDIDOS_PENDIENTES(pedidos_pendientes)
-            If pedidos_pendientes > 0 Then
-                SEL_PEDIDOS_ID(lista_pedidos_id)
-                For i As Integer = 0 To lista_pedidos_id.Count - 1
-                    _PedidoCantidadDetalles = 0
-                    SEL_PEDIDOS_CUENTA_DETALLES(lista_pedidos_id.Item(i), _PedidoCantidadDetalles)
-                    If _PedidoCantidadDetalles > 0 Then
-                        PedidoAFactura(lista_pedidos_id.Item(i))
-                        UPD_PEDIDO_PENDIENTE(lista_pedidos_id.Item(i))
-                        imprimirDatos(idFactura, "AMBAS", "IMPRESION AUTOMATICA", False)
-                        motivo_impresion = Nothing
-                    End If
-                Next
-                rellenarFacturasAbiertas()
-                rellenarFacturasCerradas()
-            End If
-        End If
 
     End Sub
 

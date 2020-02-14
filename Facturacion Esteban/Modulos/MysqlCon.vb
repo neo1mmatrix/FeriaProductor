@@ -17,7 +17,7 @@ Module MysqlCon
 
         MysqlCon = New MySqlConnection
         MysqlCon.ConnectionString = "server=186.159.230.229;userid=root;password=BDFERIA;database=bdferia;Allow Zero Datetime=True;Convert Zero Datetime=True;"
-        'MysqlCon.ConnectionString = "server=localhost;userid=root;password=BDFERIA;database=FERIA_TEST;Allow Zero Datetime=True;Convert Zero Datetime=True;"
+        'MysqlCon.ConnectionString = "server=localhost;userid=root;password=BDFERIA;database=bdferia;Allow Zero Datetime=True;Convert Zero Datetime=True;"
 
 
     End Sub

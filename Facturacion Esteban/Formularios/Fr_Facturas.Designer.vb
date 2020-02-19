@@ -34,7 +34,6 @@ Partial Class Fr_Facturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fr_Facturas))
         Me.Tab_Opciones = New System.Windows.Forms.TabControl()
         Me.TabP_Facturas_Cerradas = New System.Windows.Forms.TabPage()
-        Me.btn_revisar = New System.Windows.Forms.Button()
         Me.Dgv_facturas_cerradas = New Facturacion_Esteban.MEPDataGridView()
         Me.c_nro_factura_c = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.c_fecha_c = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -147,7 +146,6 @@ Partial Class Fr_Facturas
         'TabP_Facturas_Cerradas
         '
         Me.TabP_Facturas_Cerradas.BackColor = System.Drawing.Color.Gainsboro
-        Me.TabP_Facturas_Cerradas.Controls.Add(Me.btn_revisar)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.Dgv_facturas_cerradas)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.Btn_Modificar_1)
         Me.TabP_Facturas_Cerradas.Controls.Add(Me.Btn_Imprimir_1)
@@ -160,16 +158,6 @@ Partial Class Fr_Facturas
         Me.TabP_Facturas_Cerradas.Size = New System.Drawing.Size(830, 343)
         Me.TabP_Facturas_Cerradas.TabIndex = 0
         Me.TabP_Facturas_Cerradas.Text = "Facturas"
-        '
-        'btn_revisar
-        '
-        Me.btn_revisar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btn_revisar.Location = New System.Drawing.Point(6, 281)
-        Me.btn_revisar.Name = "btn_revisar"
-        Me.btn_revisar.Size = New System.Drawing.Size(75, 29)
-        Me.btn_revisar.TabIndex = 9
-        Me.btn_revisar.Text = "Revisar"
-        Me.btn_revisar.UseVisualStyleBackColor = True
         '
         'Dgv_facturas_cerradas
         '
@@ -243,7 +231,7 @@ Partial Class Fr_Facturas
         Me.Btn_Modificar_1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic)
         Me.Btn_Modificar_1.Image = Global.Facturacion_Esteban.My.Resources.Resources.Modificarof
         Me.Btn_Modificar_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Modificar_1.Location = New System.Drawing.Point(222, 273)
+        Me.Btn_Modificar_1.Location = New System.Drawing.Point(140, 273)
         Me.Btn_Modificar_1.Name = "Btn_Modificar_1"
         Me.Btn_Modificar_1.Size = New System.Drawing.Size(129, 56)
         Me.Btn_Modificar_1.TabIndex = 6
@@ -257,7 +245,7 @@ Partial Class Fr_Facturas
         Me.Btn_Imprimir_1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Imprimir_1.Image = Global.Facturacion_Esteban.My.Resources.Resources.Print
         Me.Btn_Imprimir_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Imprimir_1.Location = New System.Drawing.Point(357, 273)
+        Me.Btn_Imprimir_1.Location = New System.Drawing.Point(275, 273)
         Me.Btn_Imprimir_1.Name = "Btn_Imprimir_1"
         Me.Btn_Imprimir_1.Size = New System.Drawing.Size(129, 56)
         Me.Btn_Imprimir_1.TabIndex = 5
@@ -271,7 +259,7 @@ Partial Class Fr_Facturas
         Me.Btn_Eliminar_1.Font = New System.Drawing.Font("Calisto MT", 14.25!)
         Me.Btn_Eliminar_1.Image = Global.Facturacion_Esteban.My.Resources.Resources.trashcan
         Me.Btn_Eliminar_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Eliminar_1.Location = New System.Drawing.Point(492, 273)
+        Me.Btn_Eliminar_1.Location = New System.Drawing.Point(410, 273)
         Me.Btn_Eliminar_1.Name = "Btn_Eliminar_1"
         Me.Btn_Eliminar_1.Size = New System.Drawing.Size(136, 56)
         Me.Btn_Eliminar_1.TabIndex = 7
@@ -285,7 +273,7 @@ Partial Class Fr_Facturas
         Me.Btn_Salir_1.Font = New System.Drawing.Font("Calisto MT", 14.25!)
         Me.Btn_Salir_1.Image = Global.Facturacion_Esteban.My.Resources.Resources.exit_azul
         Me.Btn_Salir_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Salir_1.Location = New System.Drawing.Point(634, 273)
+        Me.Btn_Salir_1.Location = New System.Drawing.Point(552, 273)
         Me.Btn_Salir_1.Name = "Btn_Salir_1"
         Me.Btn_Salir_1.Size = New System.Drawing.Size(99, 56)
         Me.Btn_Salir_1.TabIndex = 2
@@ -299,7 +287,7 @@ Partial Class Fr_Facturas
         Me.Btn_Crear_1.Font = New System.Drawing.Font("Calisto MT", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Crear_1.Image = Global.Facturacion_Esteban.My.Resources.Resources.InvoiceOff
         Me.Btn_Crear_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Crear_1.Location = New System.Drawing.Point(91, 273)
+        Me.Btn_Crear_1.Location = New System.Drawing.Point(9, 273)
         Me.Btn_Crear_1.Name = "Btn_Crear_1"
         Me.Btn_Crear_1.Size = New System.Drawing.Size(125, 56)
         Me.Btn_Crear_1.TabIndex = 1
@@ -1119,7 +1107,6 @@ Partial Class Fr_Facturas
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents btn_revisar As Button
     Friend WithEvents dgvFacturasCobrar As MEPDataGridView
     Friend WithEvents cNroFactura As DataGridViewTextBoxColumn
     Friend WithEvents cVendidoA As DataGridViewTextBoxColumn

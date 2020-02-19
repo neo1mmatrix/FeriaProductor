@@ -1,0 +1,26 @@
+
+
+
+19/02/2020 13:03:17 [LERROR] MysqlCon.vb::1773 - Error con excepción
+	Parameter 'p_cedula_cliente' not found in the collection.
+	System.ArgumentException: Parameter 'p_cedula_cliente' not found in the collection.
+   at MySql.Data.MySqlClient.MySqlParameterCollection.GetParameterFlexible(String parameterName, Boolean throwOnNotFound)
+   at MySql.Data.MySqlClient.StoredProcedure.GetAndFixParameter(String spName, MySqlSchemaRow param, Boolean realAsFloat, MySqlParameter returnParameter)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Facturacion_Esteban.MysqlCon.SEL_CLIENTE_FACT(String p_codigo, Int32& p_id, DataGridView& p_dgv, String& p_advertencia, String& p_telefono, Boolean& p_tipo_printer, Int32& p_vendedor, String& p_email) in D:\Documents\Proyecto Douglas\Facturacion Esteban\Facturacion Esteban\Modulos\MysqlCon.vb:line 1773
+
+
+
+19/02/2020 13:03:26 [LERROR] MysqlCon.vb::1773 - Error con excepción
+	Parameter 'p_cedula_cliente' not found in the collection.
+	System.ArgumentException: Parameter 'p_cedula_cliente' not found in the collection.
+   at MySql.Data.MySqlClient.MySqlParameterCollection.GetParameterFlexible(String parameterName, Boolean throwOnNotFound)
+   at MySql.Data.MySqlClient.StoredProcedure.GetAndFixParameter(String spName, MySqlSchemaRow param, Boolean realAsFloat, MySqlParameter returnParameter)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Facturacion_Esteban.MysqlCon.SEL_CLIENTE_FACT(String p_codigo, Int32& p_id, DataGridView& p_dgv, String& p_advertencia, String& p_telefono, Boolean& p_tipo_printer, Int32& p_vendedor, String& p_email) in D:\Documents\Proyecto Douglas\Facturacion Esteban\Facturacion Esteban\Modulos\MysqlCon.vb:line 1773

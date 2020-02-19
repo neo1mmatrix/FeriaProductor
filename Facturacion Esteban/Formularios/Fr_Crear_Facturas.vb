@@ -152,6 +152,21 @@ Public Class Fr_Crear_Facturas
                 Cb_Vendedor.SelectedIndex = Cb_Vendedor.FindStringExact("CAJA")
             End If
 
+            If vp_factura_id > 0 Then
+                If MsgBox("CARGAR FACTURA ABIERTA", MsgBoxStyle.YesNo, "INFORMACION") = MsgBoxResult.Yes Then
+                    cargar_factura_actual()
+                    vp_estado = "UPDATEOPEN"
+                    Lv_Clientes.Visible = False
+                    If chb_cantidad.Checked Then
+                        Txt_Cantidad_Articulo.Focus()
+                    ElseIf chb_barcode.Checked Then
+                        txt_barcode.Focus()
+                    Else
+                        Txt_Codigo_Articulo.Focus()
+                    End If
+                End If
+            End If
+
             If Txt_Codigo_Cliente.Text = "CLIENTE DE CONTADO" Then
                 DGV_Comentarios.CurrentCell = DGV_Comentarios.Rows(1).Cells(0)
                 DGV_Comentarios.BeginEdit(True)

@@ -1379,7 +1379,7 @@ Public Class Fr_Facturas
 
     End Sub
 
-    Private Sub Button2_Click_2(sender As Object, e As EventArgs) Handles btn_revisar.Click
+    Private Sub Button2_Click_2(sender As Object, e As EventArgs) 
         tiempo = 1
     End Sub
 
